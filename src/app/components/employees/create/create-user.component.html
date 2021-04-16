@@ -1,0 +1,14 @@
+<h2>Create Employee</h2>
+<form [formGroup]="form">
+    <div class="mb-3">
+      <label for="fullName" class="form-label">Full name</label>
+      <input type="text" formControlName="fullName" class="form-control" id="fullName">
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">email</label>
+      <input type="email" formControlName="email" class="form-control" id="email">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>

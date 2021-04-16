@@ -1,17 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
-import { CreateEmployeeComponent } from './components/employees/create-employee/create-employee.component';
+import { CreateUserComponent } from './components/employees/create/create-user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CreateEmployeeComponent
+    CreateUserComponent
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [],
