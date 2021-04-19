@@ -5,7 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { CreateUserComponent } from './components/employees/create/create-user.component';
+import { CreateUserComponent } from './pages/employees/create/create-user.component';
 
 @NgModule({
   declarations: [

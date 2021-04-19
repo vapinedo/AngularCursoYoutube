@@ -20,4 +20,8 @@ export class CreateUserComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSubmit(): void {
+    console.log(this.form.value)
+  }
+
 }

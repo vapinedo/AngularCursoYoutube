@@ -1,5 +1,6 @@
 <h2>Create Employee</h2>
-<form [formGroup]="form">
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
     <div class="mb-3">
       <label for="fullName" class="form-label">Full name</label>
       <input type="text" formControlName="fullName" class="form-control" id="fullName">
