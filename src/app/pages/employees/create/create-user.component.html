@@ -7,9 +7,29 @@
     </div>
 
     <div class="mb-3">
-      <label for="email" class="form-label">email</label>
+      <label for="email" class="form-label">Email</label>
       <input type="email" formControlName="email" class="form-control" id="email">
     </div>
 
-    <button type="submit" class="btn btn-primary">Create</button>
+    <div formGroupName="skills">
+      <div class="mb-3">
+        <label for="skillName" class="form-label">Skill name</label>
+        <input type="text" formControlName="skillName" class="form-control" id="skillName">
+      </div>
+
+      <div class="mb-3">
+        <label for="experiencieInYears" class="form-label">Experiencie in Years</label>
+        <input type="text" formControlName="experiencieInYears" class="form-control" id="experiencieInYears">
+      </div>
+
+      <div class="mb-3">
+        <label for="proficiency" class="form-label">Proficiency</label>
+        <input class="mx-3" type="radio" value="beginner" formControlName="proficiency">Beginner
+        <input class="mx-3" type="radio" value="intermediate" formControlName="proficiency">Intermediate
+        <input class="mx-3" type="radio" value="advance" formControlName="proficiency">Advance
+      </div>
+    </div>
+
+    <button style="margin-right: 12px" type="submit" class="btn btn-primary">Save</button>
+    <button type="button" class="btn btn-secondary" (click)="onLoadData()">Load Data</button>
 </form>
